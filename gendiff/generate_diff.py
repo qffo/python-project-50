@@ -1,7 +1,7 @@
 import json
 
 
-def generate_diff(file_path1, file_path2, format=json):
+def generate_diff(file_path1, file_path2, format=json):  # noqa: C901
     f1 = json.load(open(file_path1))
     f2 = json.load(open(file_path2))
     result = []
