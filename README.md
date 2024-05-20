@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/qffo/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/qffo/python-project-50/actions)
 [![Actions Status](https://github.com/qffo/python-project-50/actions/workflows/pyci.yml/badge.svg)](https://github.com/qffo/python-project-50/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/6707ce0526115f07360d/maintainability)](https://codeclimate.com/github/qffo/python-project-50/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/44ec448dfcc9030ea46a/maintainability)](https://codeclimate.com/github/qffo/python-project-50/maintainability)
 
 ## Описание
 Этот проект был сделан в рамках учебного курса __Hexlet__.
