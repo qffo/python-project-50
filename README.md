@@ -2,6 +2,7 @@
 [![Actions Status](https://github.com/qffo/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/qffo/python-project-50/actions)
 [![Actions Status](https://github.com/qffo/python-project-50/actions/workflows/pyci.yml/badge.svg)](https://github.com/qffo/python-project-50/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/44ec448dfcc9030ea46a/maintainability)](https://codeclimate.com/github/qffo/python-project-50/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/44ec448dfcc9030ea46a/test_coverage)](https://codeclimate.com/github/qffo/python-project-50/test_coverage)
 
 ## Описание
 Этот проект был сделан в рамках учебного курса __Hexlet__.
