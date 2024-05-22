@@ -26,3 +26,5 @@ This project was built using these tools:
 **Пример работы пакета**
 
 [![asciicast](https://asciinema.org/a/YqvqfKV3xHhzSixr8CiqIhq0h.svg)](https://asciinema.org/a/YqvqfKV3xHhzSixr8CiqIhq0h)
+
+[![asciicast](https://asciinema.org/a/RdXR3gX0H598u7X7Y0LVvHWE9.svg)](https://asciinema.org/a/RdXR3gX0H598u7X7Y0LVvHWE9)
