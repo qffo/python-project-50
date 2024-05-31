@@ -24,5 +24,5 @@ def generate_diff(file_path1, file_path2, format=json):  # noqa: C901
     return f"{'{'}\n{foo}{'}'}"
 
 
-print(generate_diff('tests/fixtures/file3.json', 'tests/fixtures/file4.json'))
+# print(generate_diff('tests/fixtures/file3.json', 'tests/fixtures/file4.json'))
 # print(generate_diff('tests/fixtures/file1.yml', 'tests/fixtures/file2.yaml'))
