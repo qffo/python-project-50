@@ -10,3 +10,4 @@ dist/
 coverage.xml
 .pytest_cache/
 files_for_test/
+samples/
