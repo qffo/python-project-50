@@ -34,3 +34,6 @@ Nested stylish
 
 Plain
 [![asciicast](https://asciinema.org/a/6r0Aln07rPScNDZTALwgautcE.svg)](https://asciinema.org/a/6r0Aln07rPScNDZTALwgautcE)
+
+Json
+[![asciicast](https://asciinema.org/a/KdxbGF47VIkhV6viyfqWlhc9c.svg)](https://asciinema.org/a/KdxbGF47VIkhV6viyfqWlhc9c)

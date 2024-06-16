@@ -2,6 +2,7 @@ from .parser_file import parsering
 from collections import OrderedDict
 from .formated.stylish_formated import format_stylish
 from .formated.plain_formated import format_plain
+from .formated.json_formated import format_json
 
 
 def gen_diff(data1: dict, data2: dict) -> dict:  # noqa: C901
@@ -40,6 +41,8 @@ def generate_diff(file_path1: str, file_path2: str, format='stylish'):
             return format_stylish(diff)
         case 'plain':
             return format_plain(diff)
+        case 'json':
+            return format_json(diff)
 
 
 # print(generate_diff('tests/fixtures/file3.yaml', 'tests/fixtures/file4.json'))
