@@ -31,3 +31,6 @@ This project was built using these tools:
 
 Nested stylish
 [![asciicast](https://asciinema.org/a/dmpwqmJ1AkDdl65pQPkkOboiV.svg)](https://asciinema.org/a/dmpwqmJ1AkDdl65pQPkkOboiV)
+
+Plain
+[![asciicast](https://asciinema.org/a/6r0Aln07rPScNDZTALwgautcE.svg)](https://asciinema.org/a/6r0Aln07rPScNDZTALwgautcE)

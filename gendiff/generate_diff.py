@@ -1,11 +1,11 @@
 from .parser_file import parsering
 from collections import OrderedDict
-from .stylish_formated import format_stylish
+from .formated.stylish_formated import format_stylish
+from .formated.plain_formated import format_plain
 
 
-def gen_diff(data1, data2):  # noqa: C901
+def gen_diff(data1: dict, data2: dict) -> dict:  # noqa: C901
     diff = {}
-
     keys = set(data1.keys() | set(data2.keys()))
 
     for i in keys:
@@ -28,14 +28,18 @@ def gen_diff(data1, data2):  # noqa: C901
     return OrderedDict(sorted(diff.items(), key=lambda k: k))
 
 
-def generate_diff(file_path1, file_path2, format='stylish'):
+def generate_diff(file_path1: str, file_path2: str, format='stylish'):
     old_file = parsering(file_path1)
     new_file = parsering(file_path2)
     diff = gen_diff(old_file, new_file)
-    if format is None:
-        return format_stylish(diff)
-    if format == 'stylish':
-        return format_stylish(diff)
+
+    match format:
+        case None:
+            return format_stylish(diff)
+        case 'stylish':
+            return format_stylish(diff)
+        case 'plain':
+            return format_plain(diff)
 
 
 # print(generate_diff('tests/fixtures/file3.yaml', 'tests/fixtures/file4.json'))
