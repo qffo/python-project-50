@@ -2,7 +2,14 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = ""
-authors = ["qffo <075viktor@mail.ru>"]
+authors = ["qffo Viktor Romanov"]
+classifiers = [
+    "Topic :: Utilities",
+    "Programming Language :: Python",
+    "Environment :: Console",
+    "Natural Language :: English"
+]
+repository = "https://github.com/qffo/python-project-50"
 readme = "README.md"
 packages = [
   { include = "gendiff" },
