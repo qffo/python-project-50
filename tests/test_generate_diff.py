@@ -1,23 +1,26 @@
 import pytest
 from gendiff.generate_diff import generate_diff
 
-yml_file1 = 'tests/fixtures/file1.yml'
-yaml_file2 = 'tests/fixtures/file2.yaml'
+json_old = 'tests/fixtures/file3.json'
+json_new = 'tests/fixtures/file4.json'
+yaml_old = 'tests/fixtures/file3.yaml'
+yaml_new = 'tests/fixtures/file4.yaml'
 
-file3 = 'tests/fixtures/file3.json'
-file4 = 'tests/fixtures/file4.json'
-
-linear = 'tests/fixtures/linear'
 stylish = 'tests/fixtures/nested_stylish'
 plain = 'tests/fixtures/nested_plain'
+jsonn = 'tests/fixtures/json.json'
 
 
 @pytest.mark.parametrize(
     'path1, path2, format_name, expected',
     [
-        (yml_file1, yaml_file2, 'stylish', linear),
-        (file3, file4, 'stylish', stylish),
-        (file3, file4, 'plain', plain),
+        (json_old, json_new, 'stylish', stylish),
+        (json_old, json_new, 'plain', plain),
+        (json_old, json_new, 'json', jsonn),
+        (yaml_old, yaml_new, 'stylish', stylish),
+        (yaml_old, yaml_new, 'plain', plain),
+        (yaml_old, yaml_new, 'json', jsonn),
+
     ]
 )
 def test_generate_diff(path1, path2, format_name, expected):

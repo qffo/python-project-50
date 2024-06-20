@@ -1,90 +1,91 @@
 {
     "common": {
+        "type": "nested",
         "value": {
             "follow": {
-                "value": false,
-                "status": "added"
+                "type": "added",
+                "value": false
             },
             "setting1": {
-                "value": "Value 1",
-                "status": "unchanged"
+                "type": "unchanged",
+                "value": "Value 1"
             },
             "setting2": {
-                "value": 200,
-                "status": "removed"
+                "type": "removed",
+                "value": 200
             },
             "setting3": {
-                "old_value": true,
-                "new_value": null,
-                "status": "updated"
+                "type": "changed",
+                "old": true,
+                "new": null
             },
             "setting4": {
-                "value": "blah blah",
-                "status": "added"
+                "type": "added",
+                "value": "blah blah"
             },
             "setting5": {
+                "type": "added",
                 "value": {
                     "key5": "value5"
-                },
-                "status": "added"
+                }
             },
             "setting6": {
+                "type": "nested",
                 "value": {
                     "doge": {
+                        "type": "nested",
                         "value": {
                             "wow": {
-                                "old_value": "",
-                                "new_value": "so much",
-                                "status": "updated"
+                                "type": "changed",
+                                "old": "",
+                                "new": "so much"
                             }
-                        },
-                        "status": "nested"
+                        }
                     },
                     "key": {
-                        "value": "value",
-                        "status": "unchanged"
+                        "type": "unchanged",
+                        "value": "value"
                     },
                     "ops": {
-                        "value": "vops",
-                        "status": "added"
+                        "type": "added",
+                        "value": "vops"
                     }
-                },
-                "status": "nested"
+                }
             }
-        },
-        "status": "nested"
+        }
     },
     "group1": {
+        "type": "nested",
         "value": {
             "baz": {
-                "old_value": "bas",
-                "new_value": "bars",
-                "status": "updated"
+                "type": "changed",
+                "old": "bas",
+                "new": "bars"
             },
             "foo": {
-                "value": "bar",
-                "status": "unchanged"
+                "type": "unchanged",
+                "value": "bar"
             },
             "nest": {
-                "old_value": {
+                "type": "changed",
+                "old": {
                     "key": "value"
                 },
-                "new_value": "str",
-                "status": "updated"
+                "new": "str"
             }
-        },
-        "status": "nested"
+        }
     },
     "group2": {
+        "type": "removed",
         "value": {
             "abc": 12345,
             "deep": {
                 "id": 45
             }
-        },
-        "status": "removed"
+        }
     },
     "group3": {
+        "type": "added",
         "value": {
             "deep": {
                 "id": {
@@ -92,7 +93,6 @@
                 }
             },
             "fee": 100500
-        },
-        "status": "added"
+        }
     }
 }
