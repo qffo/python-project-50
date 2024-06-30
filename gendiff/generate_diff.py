@@ -1,11 +1,11 @@
-from .parser_file import parsering
+from .read_file import read_file
 from collections import OrderedDict
 from .formated.stylish_formated import format_stylish
 from .formated.plain_formated import format_plain
 from .formated.json_formated import format_json
 
 
-def gen_diff(data1: dict, data2: dict) -> dict:
+def gen_diff(data1, data2) -> dict:
     diff = {}
     keys = set(data1.keys() | set(data2.keys()))
 
@@ -25,9 +25,9 @@ def gen_diff(data1: dict, data2: dict) -> dict:
     return OrderedDict(sorted(diff.items(), key=lambda k: k))
 
 
-def generate_diff(file_path1: str, file_path2: str, format='stylish'):
-    old_file = parsering(file_path1)
-    new_file = parsering(file_path2)
+def generate_diff(data1: str, data2: str, format='stylish'):
+    old_file = read_file(data1)
+    new_file = read_file(data2)
     diff = gen_diff(old_file, new_file)
 
     match format:
